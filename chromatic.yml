@@ -1,0 +1,27 @@
+# Workflow name
+name: "Chromatic Deployment"
+
+# Event for the workflow
+on:
+  push:
+    branches: [master, stagging, developing]
+  pull_request:
+    branches: [master, stagging, developing]
+# List of jobs
+jobs:
+  chromatic-deployment:
+    # Operating System
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: foo
+    # Job steps
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm
+        #👇 Adds Chromatic as a step in the workflow
+      - uses: chromaui/action@v1
+        # Options required for Chromatic's GitHub Action
+        with:
+          workingDir: foo
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
