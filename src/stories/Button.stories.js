@@ -19,20 +19,14 @@ export const Primary = {
 
 export const Secondary = {
   args: {
-    label: "Click Here!",
-  },
-};
-
-export const Large = {
-  args: {
-    size: "large",
+    hierarchy: "secondary",
     label: "Button",
   },
 };
 
-export const Small = {
+export const Tertiary = {
   args: {
-    size: "small",
+    hierarchy: "tertiary",
     label: "Button",
   },
 };
