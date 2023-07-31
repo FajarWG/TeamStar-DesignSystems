@@ -1,34 +1,49 @@
 import PropTypes from "prop-types";
-import "./button.css";
-import { ReactComponent as ArrowLeft } from "./assets/arrow-left.svg";
+import "./css/button.css";
+import { ArrowLeft } from "iconsax-react";
 
-export const Button = ({
-  hierarchy,
-  size,
-  label,
-  variant,
-  disabled,
-  ...props
-}) => {
+export const Button = ({ type, size, label, variant, disabled, ...props }) => {
   const mode =
-    hierarchy === "primary"
-      ? "button--primary"
-      : hierarchy === "secondary"
-      ? "button--secondary"
-      : "button--tertiary";
+    type === "primary"
+      ? {
+          css: "button--primary",
+          icon: "var(--neutral0)",
+        }
+      : type === "secondary"
+      ? {
+          css: "button--secondary",
+          icon: "var(--neutral0)",
+        }
+      : {
+          css: "button--tertiary",
+          icon: "var(--primary300)",
+          disable: "var(--primary500)",
+        };
+
+  const sizeIcon = size === "sm" ? "14" : size === "md" ? "19" : "22";
 
   return (
     <button
       type="button"
-      className={["button", `button--${size}`, mode].join(" ")}
+      className={[
+        "button",
+        `${variant !== "icon" ? `button--${size}` : `button-icon--${size}`}`,
+        mode.css,
+      ].join(" ")}
       disabled={disabled}
       {...props}
     >
       {variant === "icon" ? (
-        <ArrowLeft />
+        <ArrowLeft
+          size={sizeIcon}
+          color={!disabled ? mode.icon : mode.disable}
+        />
       ) : variant.includes("icon") ? (
         <>
-          <ArrowLeft />
+          <ArrowLeft
+            size={sizeIcon}
+            color={!disabled ? mode.icon : mode.disable}
+          />
           {label}
         </>
       ) : (
@@ -38,19 +53,24 @@ export const Button = ({
   );
 };
 
+export const TypeProps = ["primary", "secondary", "tertiary"];
+export const VariantsProps = ["label", "icon", "icon-label"];
+export const SizeProps = ["sm", "md", "lg"];
+
 Button.propTypes = {
-  hierarchy: PropTypes.oneOf(["primary", "secondary", "tertiary"]),
-  size: PropTypes.oneOf(["small", "medium", "large"]),
+  type: PropTypes.oneOf(TypeProps),
+  size: PropTypes.oneOf(SizeProps),
   label: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(["label", "icon", "icon-label"]),
+  variant: PropTypes.oneOf(VariantsProps),
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
-  hierarchy: "primary",
-  size: "medium",
+  type: "primary",
+  size: "md",
   variant: "label",
+  label: "Button",
   disabled: false,
   onClick: undefined,
 };

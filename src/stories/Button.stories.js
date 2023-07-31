@@ -7,26 +7,45 @@ export default {
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
 };
 
 export const Primary = {
   args: {
-    hierarchy: "primary",
-    label: "Button",
+    type: "primary",
+    label: "Primary",
   },
 };
 
 export const Secondary = {
   args: {
-    hierarchy: "secondary",
-    label: "Button",
+    type: "secondary",
+    label: "Secondary",
   },
 };
 
 export const Tertiary = {
   args: {
-    hierarchy: "tertiary",
-    label: "Button",
+    type: "tertiary",
+    label: "Teritary",
+  },
+};
+
+export const Label = {
+  args: {
+    variant: "label",
+    label: "Label",
+  },
+};
+
+export const Icon = {
+  args: {
+    variant: "icon",
+  },
+};
+
+export const IconLabel = {
+  args: {
+    variant: "icon-label",
+    label: "Icon Label",
   },
 };

@@ -1,0 +1,46 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as ButtonStories from "./Button.stories.js";
+import { Button } from "../components/Button";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Button type="primary" label="Primary" />
+  <Button type="secondary" label="Secondary" />
+  <Button type="tertiary" label="Tertiary" />
+</Canvas>
+
+### Sizes
+
+{" "}
+
+<Canvas>
+  <Button type="primary" size="sm" label="Small" />
+  <Button type="primary" size="md" label="Medium" />
+  <Button type="primary" size="lg" label="Large" />
+</Canvas>
+
+### Disabled
+
+{" "}
+
+<Canvas>
+  <Button type="primary" disabled label="Primary" />
+  <Button type="secondary" disabled label="Secondary" />
+  <Button type="tertiary" disabled label="Tertiary" />
+</Canvas>
