@@ -1,0 +1,37 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as BadgesStories from "./Badges.stories.js";
+import { Badges } from "../components/Badges";
+
+<Meta of={BadgesStories} />
+
+# Badges
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Badges type="primary" label="Primary" />
+  <Badges type="secondary" label="Secondary" />
+  <Badges type="success" label="Success" />
+  <Badges type="danger" label="Danger" />
+</Canvas>
+
+### Sizes
+
+{" "}
+
+<Canvas>
+  <Badges type="primary" size="sm" label="Small" />
+  <Badges type="primary" size="md" label="Medium" />
+  <Badges type="primary" size="lg" label="Large" />
+</Canvas>

@@ -1,0 +1,51 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as DotsStories from "./Dots.stories.js";
+import { Dots } from "../components/Dots";
+
+<Meta of={DotsStories} />
+
+# Dots
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Dots />
+  <Dots states="offline" />
+</Canvas>
+
+### Sizes (Online)
+
+{" "}
+
+<Canvas>
+  <Dots size="xs" />
+  <Dots size="sm" />
+  <Dots size="md" />
+  <Dots size="lg" />
+  <Dots size="xl" />
+  <Dots size="2xl" />
+</Canvas>
+
+### Size (Offline)
+
+{" "}
+
+<Canvas>
+  <Dots size="xs" states="offline" />
+  <Dots size="sm" states="offline" />
+  <Dots size="md" states="offline" />
+  <Dots size="lg" states="offline" />
+  <Dots size="xl" states="offline" />
+  <Dots size="2xl" states="offline" />
+</Canvas>

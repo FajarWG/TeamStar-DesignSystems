@@ -13,6 +13,7 @@
     "chromatic": "npx chromatic --project-token=chpt_4950bd0194163c2"
   },
   "dependencies": {
+    "iconsax-react": "^0.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-plugin-svgr": "^3.2.0"

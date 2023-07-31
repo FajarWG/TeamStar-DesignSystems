@@ -1,0 +1,43 @@
+.dots {
+  height: 25px;
+  width: 25px;
+  background-color: var(--neutral40);
+  border-radius: 50%;
+  border: 1.5px solid white;
+
+  display: inline-block;
+}
+
+.dots--online {
+  background-color: var(--success200);
+}
+
+.dots--xs {
+  height: 6px;
+  width: 6px;
+}
+
+.dots--sm {
+  height: 8px;
+  width: 8px;
+}
+
+.dots--md {
+  height: 10px;
+  width: 10px;
+}
+
+.dots--lg {
+  height: 12px;
+  width: 12px;
+}
+
+.dots--xl {
+  height: 14px;
+  width: 14px;
+}
+
+.dots--2xl {
+  height: 16px;
+  width: 16px;
+}
