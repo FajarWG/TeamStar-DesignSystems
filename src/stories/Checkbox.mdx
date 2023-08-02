@@ -1,0 +1,41 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as CheckboxStories from "./Checkbox.stories.js";
+import { Checkbox } from "../components/Checkbox";
+
+<Meta of={CheckboxStories} />
+
+# Checkbox
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Checkbox />
+  <Checkbox checked />
+</Canvas>
+
+### Sizes
+
+{" "}
+
+<Canvas>
+  <Checkbox size="sm" />
+  <Checkbox size="md" />
+  <Checkbox size="lg" />
+</Canvas>
+
+<Canvas>
+  <Checkbox size="sm" checked />
+  <Checkbox size="md" checked />
+  <Checkbox size="lg" checked />
+</Canvas>

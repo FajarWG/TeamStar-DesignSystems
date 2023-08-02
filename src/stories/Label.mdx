@@ -1,0 +1,27 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as LabelStories from "./Label.stories.js";
+import { Label } from "../components/Label";
+
+<Meta of={LabelStories} />
+
+# Label
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Label type="default" text="Label" />
+  <Label type="required" text="Label" />
+  <Label type="info" text="Label" />
+  <Label type="change" text="Label" />
+</Canvas>

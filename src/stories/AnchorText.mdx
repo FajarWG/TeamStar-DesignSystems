@@ -1,0 +1,44 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as AnchorTextStories from "./AnchorText.stories.js";
+import { AnchorText } from "../components/AnchorText";
+
+<Meta of={AnchorTextStories} />
+
+# Anchor Text
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <AnchorText type="text" label="Anchor Text" />
+  <AnchorText type="icon" />
+</Canvas>
+
+### Sizes
+
+{" "}
+
+<Canvas>
+  <AnchorText type="text" label="Anchor Text" size="sm" />
+  <AnchorText type="text" label="Anchor Text" size="md" />
+  <AnchorText type="text" label="Anchor Text" size="lg" />
+</Canvas>
+
+### Disabled
+
+{" "}
+
+<Canvas>
+  <AnchorText type="text" label="Anchor Text" disabled />
+  <AnchorText type="icon" disabled />
+</Canvas>

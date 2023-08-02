@@ -1,0 +1,55 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as AvatarsStories from "./Avatars.stories.js";
+import { Avatars } from "../components/Avatars";
+
+<Meta of={AvatarsStories} />
+
+# Avatars
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Avatars
+    type="desc"
+    size="md"
+    label="Olivia Rhye"
+    desc="olivia@untitledui.com"
+  />
+  <Avatars type="nodesc" size="md" label="Olivia Rhye" />
+</Canvas>
+
+### Size
+
+{" "}
+
+<Canvas>
+  <Avatars
+    type="desc"
+    size="sm"
+    label="Olivia Rhye"
+    desc="olivia@untitledui.com"
+  />
+  <Avatars
+    type="desc"
+    size="md"
+    label="Olivia Rhye"
+    desc="olivia@untitledui.com"
+  />
+  <Avatars
+    type="desc"
+    size="lg"
+    label="Olivia Rhye"
+    desc="olivia@untitledui.com"
+  />
+</Canvas>

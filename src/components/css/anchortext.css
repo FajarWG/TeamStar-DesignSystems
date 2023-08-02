@@ -1,0 +1,54 @@
+.anchortext {
+  font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 700;
+  border: 0;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.anchortext--sm {
+  font-size: 12px;
+  padding: 8px 12px;
+}
+.anchortext--md {
+  font-size: 16px;
+  padding: 10px 16px;
+}
+.anchortext--lg {
+  font-size: 18px;
+  padding: 14px 28px;
+}
+
+.anchortext-icon--sm {
+  padding: 8px;
+}
+
+.anchortext-icon--md {
+  padding: 10px;
+}
+
+.anchortext-icon--lg {
+  padding: 14px;
+}
+
+.anchortext:hover {
+  color: var(--neutral60);
+}
+
+.anchortext--disabled {
+  color: var(--secondary200);
+  cursor: not-allowed;
+  font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 700;
+  border: 0;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}

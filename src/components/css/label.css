@@ -1,0 +1,16 @@
+.label {
+  color: var(--darkmono);
+}
+
+.label span {
+  color: var(--danger300);
+  margin-right: 4px;
+}
+
+.rectangle {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  margin-bottom: 4px;
+  background-color: var(--primary300);
+}

@@ -1,0 +1,27 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as TooltipStories from "./Tooltip.stories.js";
+import { Tooltip } from "../components/Tooltip";
+
+<Meta of={TooltipStories} />
+
+# Tooltip
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Tooltip label="Top" direction="top" content="Tooltip" />
+  <Tooltip label="Right" direction="right" content="Tooltip" />
+  <Tooltip label="Bottom" direction="bottom" content="Tooltip" />
+  <Tooltip label="Left" direction="left" content="Tooltip" />
+</Canvas>
