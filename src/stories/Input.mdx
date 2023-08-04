@@ -1,0 +1,36 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as InputStories from "./Input.stories.js";
+import { Input } from "../components/Input";
+
+<Meta of={InputStories} />
+
+# Input
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Input type="text" text="Input" />
+</Canvas>
+
+### No Icon
+
+<Canvas>
+  <Input type="text" text="Input" icon={false} />
+</Canvas>
+
+### With Hint
+
+<Canvas>
+  <Input type="text" text="Input" hint="This is a hint text." />
+</Canvas>

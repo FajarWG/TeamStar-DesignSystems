@@ -1,0 +1,103 @@
+/* .form-control {
+  appearance: none;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  align-items: center;
+  padding: 4px 12px;
+  width: 543px;
+
+  color: var(--neutral0);
+} */
+
+.input input::placeholder {
+  color: var(--neutral60);
+}
+
+.input input:focus::placeholder {
+  color: transparent;
+}
+
+.input label {
+  display: block;
+}
+
+.input-icon {
+  margin-bottom: -40px;
+  margin-left: -10px;
+  z-index: 1;
+  position: relative;
+  padding: 0px 10px 0 20px;
+  pointer-events: none;
+}
+
+.ifta-label {
+  font-family: Plus Jakarta Sans;
+  color: var(--secondary200);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: -25px;
+  margin-left: 24px;
+  z-index: 1;
+  position: relative;
+  padding: 0px 10px 0 20px;
+  pointer-events: none;
+}
+
+.ifta-label-noicon {
+  margin-left: -7px;
+}
+
+.ifta-label:focus {
+  color: var(--primary300);
+}
+
+.ifta-field {
+  font-size: 16px;
+
+  border: 0;
+  border-radius: 6px;
+  padding: 30px 13px 9px;
+  margin: 0 0 10px;
+  width: 100%;
+  box-shadow: inset 0 0 0 1px var(--secondary300);
+  background: var(--secondary300);
+}
+.ifta-field:focus {
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: inset 0 0 0 1px var(--primary300);
+}
+
+.ifta-field-icon {
+  font-size: 16px;
+
+  border: 0;
+  border-radius: 6px;
+  padding: 30px 44px 9px;
+  margin: 0 0 10px;
+  width: 100%;
+  box-shadow: inset 0 0 0 1px var(--secondary300);
+  background: var(--secondary300);
+}
+.ifta-field-icon:focus {
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: inset 0 0 0 1px var(--primary300);
+}
+
+.ifta-field:invalid {
+  box-shadow: inset 0 0 0 1px var(--danger300);
+}
+
+.ifta-field:disabled {
+  box-shadow: inset 0 0 0 1px var(--secondary200);
+  opacity: 0.5;
+}
+
+.ifta-hint {
+  font-size: 16px;
+  color: var(--neutral0);
+  margin-top: -7px;
+}
