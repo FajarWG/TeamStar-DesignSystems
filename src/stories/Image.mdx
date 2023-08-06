@@ -1,0 +1,40 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as ImageStories from "./Image.stories.js";
+import { Image } from "../components/Image";
+
+<Meta of={ImageStories} />
+
+# Image
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Image
+    link="https://images.pexels.com/photos/17601814/pexels-photo-17601814/free-photo-of-cahaya-kota-jalan-lalu-lintas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    size="sm"
+  />
+  <Image link="https://images.pexels.com/photos/17601814/pexels-photo-17601814/free-photo-of-cahaya-kota-jalan-lalu-lintas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+  <Image
+    link="https://images.pexels.com/photos/17601814/pexels-photo-17601814/free-photo-of-cahaya-kota-jalan-lalu-lintas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    size="lg"
+  />
+</Canvas>
+
+### Without Image
+
+<Canvas>
+  <Image size="sm" />
+  <Image />
+  <Image size="lg" />
+</Canvas>

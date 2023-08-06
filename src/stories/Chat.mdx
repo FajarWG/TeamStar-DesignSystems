@@ -1,0 +1,36 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as ChatStories from "./Chat.stories.js";
+import { Chat } from "../components/Chat";
+
+<Meta of={ChatStories} />
+
+# Chat
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All CS
+
+{" "}
+
+<Canvas>
+  <Chat />
+  <Chat type="file" />
+  <Chat type="image" />
+</Canvas>
+
+### All User
+
+{" "}
+
+<Canvas>
+  <Chat user="self" type="image" />
+  <Chat user="self" type="file" />
+  <Chat user="self" />
+</Canvas>

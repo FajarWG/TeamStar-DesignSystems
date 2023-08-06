@@ -1,0 +1,27 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as CommentStories from "./Comment.stories.js";
+import { Comment } from "../components/Comment";
+
+<Meta of={CommentStories} />
+
+# Comment
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <Comment />
+  <Comment reply={12} />
+  <Comment like={1} />
+  <Comment reply={3} like={3} />
+</Canvas>

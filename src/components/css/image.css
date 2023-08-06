@@ -1,0 +1,16 @@
+.image {
+  width: 324px;
+  height: 274px;
+  border-radius: 12px;
+  background: var(--secondary-sc-200, #444c60);
+}
+
+.image-sm {
+  width: 116px;
+  height: 98px;
+}
+
+.image-lg {
+  width: 540px;
+  height: 420px;
+}

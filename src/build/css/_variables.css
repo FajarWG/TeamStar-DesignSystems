@@ -1,0 +1,61 @@
+/**
+ * Do not edit directly
+ * Generated on Sat, 05 Aug 2023 15:29:05 GMT
+ */
+
+:root {
+  --global-primary-pr50: #e6f5fe;
+  --global-primary-pr75: #96d8fc;
+  --global-primary-pr100: #6bc7fb;
+  --global-primary-pr200: #2baff9;
+  --global-primary-pr300: #009ff8;
+  --global-primary-pr400: #006fae;
+  --global-primary-pr500: #006197;
+  --global-secondary-sc50: #e9e9ec;
+  --global-secondary-sc75: #a3a6b1;
+  --global-secondary-sc100: #7d8290;
+  --global-secondary-sc200: #444c60;
+  --global-secondary-sc300: #1e2740;
+  --global-secondary-sc400: #151b2d;
+  --global-secondary-sc500: #121827;
+  --global-neutral-nt0: #ffffff;
+  --global-neutral-nt10: #fafafa;
+  --global-neutral-nt20: #f5f5f5;
+  --global-neutral-nt30: #ebebeb;
+  --global-neutral-nt40: #dedede;
+  --global-neutral-nt50: #bfbfbf;
+  --global-neutral-nt60: #b0b0b0;
+  --global-neutral-nt70: #a3a3a3;
+  --global-neutral-nt80: #949494;
+  --global-neutral-nt90: #858585;
+  --global-neutral-nt100: #757575;
+  --global-neutral-nt200: #666666;
+  --global-neutral-nt300: #575757;
+  --global-neutral-nt400: #4a4a4a;
+  --global-neutral-nt500: #3b3b3b;
+  --global-neutral-nt600: #2e2e2e;
+  --global-neutral-nt700: #1c1c1c;
+  --global-neutral-nt800: #0d0d0d;
+  --global-neutral-nt900: #000000;
+  --global-danger-dr50: #fae6ed;
+  --global-danger-dr75: #e997b7;
+  --global-danger-dr100: #e06c99;
+  --global-danger-dr200: #d32d6d;
+  --global-danger-dr300: #ca024f;
+  --global-danger-dr400: #8d0137;
+  --global-danger-dr500: #7b0130;
+  --global-warning-wr50: #fdf7ea;
+  --global-warning-wr75: #f6ddaa;
+  --global-warning-wr100: #f3cf87;
+  --global-warning-wr200: #eeba53;
+  --global-warning-wr300: #eaac30;
+  --global-warning-wr400: #a47822;
+  --global-warning-wr500: #8f691d;
+  --global-success-ss50: #e6f3e6;
+  --global-success-ss75: #96cf96;
+  --global-success-ss100: #6bbb6b;
+  --global-success-ss200: #2b9e2b;
+  --global-success-ss300: #008a00;
+  --global-success-ss400: #006100;
+  --global-success-ss500: #005400;
+}

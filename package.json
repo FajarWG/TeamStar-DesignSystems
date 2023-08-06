@@ -40,6 +40,7 @@
     "prop-types": "^15.8.1",
     "storybook": "^7.1.1",
     "storybook-dark-mode": "^3.0.1",
+    "style-dictionary": "^3.8.0",
     "vite": "^4.4.5"
   },
   "readme": "ERROR: No README data found!",
