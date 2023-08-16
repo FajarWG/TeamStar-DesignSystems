@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./Atom/Navbar";
+import Navbar from "./atom/Navbar";
 import MainContent from "./atom/MainContent";
 import SidebarLeft from "./atom/SidebarLeft";
 import SidebarRight from "./atom/SidebarRight";
