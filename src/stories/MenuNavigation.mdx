@@ -1,0 +1,29 @@
+import { Canvas, Meta, Story, Primary, Controls } from "@storybook/blocks";
+
+import * as MenuNavigationStories from "./MenuNavigation.stories.js";
+import { MenuNavigation } from "../components/MenuNavigation";
+import { Send } from "iconsax-react";
+
+<Meta of={MenuNavigationStories} />
+
+# MenuNavigation
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Stories
+
+### All
+
+{" "}
+
+<Canvas>
+  <MenuNavigation
+    svg={<Send size="40px" variant="Bulk" color="#FFFFFF" />}
+    type="horizontal"
+    sizeFont={"md"}
+  />
+</Canvas>

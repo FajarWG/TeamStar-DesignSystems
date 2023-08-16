@@ -1,11 +1,11 @@
 .divider {
   display: flex;
   align-items: center;
-  width: 100vh;
+  width: 100%;
 }
 
 .divider-line {
-  border: 1px solid var(--secondary200);
+  border: 0.5px solid var(--secondary200);
   width: 100%;
 }
 

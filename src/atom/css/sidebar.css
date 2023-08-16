@@ -1,0 +1,38 @@
+.sidebar {
+  display: flex;
+  width: 330px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+  background-color: var(--secondary300);
+}
+
+.sidebar-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-right-top {
+  width: 330px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: var(--secondary300);
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-contact {
+  display: flex;
+  gap: 12px;
+}

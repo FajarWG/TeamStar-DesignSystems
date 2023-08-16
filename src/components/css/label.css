@@ -1,5 +1,21 @@
 .label {
   color: var(--darkmono);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.label-sm {
+  font-size: 12px;
+}
+
+.label-lg {
+  font-size: 18px;
+  color: var(--neutral0);
+  line-height: 26px;
+}
+
+.image-md {
+  font-size: 14px;
 }
 
 .label span {

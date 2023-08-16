@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 import "./css/label.css";
 import { InfoCircle } from "iconsax-react";
 
-export const Label = ({ type, text }) => {
+export const Label = ({ type, text, size }) => {
   return (
-    <label className="label">
+    <label className={`label label-${size}`}>
       {type === "required" ? (
         <span>*</span>
       ) : type === "change" ? (
@@ -23,6 +23,7 @@ const TypeProps = ["default", "required", "info", "change"];
 Label.propTypes = {
   type: PropTypes.oneOf(TypeProps),
   text: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(["sm", "md"]),
 };
 
 Label.defaultProps = {
