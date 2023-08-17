@@ -84,6 +84,11 @@ const MainContent = () => {
         </div>
         <Divider />
         <Comment />
+        <Comment />
+        <Comment />
+        <Comment />
+        <Comment />
+        <Comment />
       </div>
     </div>
   );

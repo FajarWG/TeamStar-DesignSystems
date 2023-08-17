@@ -7,11 +7,19 @@
   gap: 12px;
   flex-shrink: 0;
   background-color: var(--secondary300);
+  height: 100vh;
+  position: fixed;
+  left: 0;
 }
 
 .sidebar-right {
   display: flex;
   flex-direction: column;
+  right: 0;
+  position: fixed;
+  overflow-y: scroll;
+  max-height: 100vh;
+  z-index: 1;
 }
 
 .sidebar-right-top {

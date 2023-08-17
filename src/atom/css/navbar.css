@@ -4,6 +4,9 @@ header {
   align-items: center;
   padding: 12px 40px;
   background: var(--secondary300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 #nav-title {

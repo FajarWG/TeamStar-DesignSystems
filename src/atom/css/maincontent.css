@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   width: 568px;
+  position: relative;
+  left: 30%;
+  z-index: 0;
 }
 
 .create-content {
