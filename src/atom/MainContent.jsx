@@ -3,6 +3,9 @@ import { Avatars } from "../components/Avatars";
 import { MenuNavigation } from "../components/MenuNavigation";
 import { Divider } from "../components/Divider";
 import { Comment } from "../components/Comment";
+import { Input } from "../components/Input";
+import { Image } from "../components/Image";
+import { Label } from "../components/Label";
 
 import {
   Bookmark,
@@ -12,7 +15,6 @@ import {
   Share,
   Star1,
 } from "iconsax-react";
-import { Image } from "../components/Image";
 
 const MainContent = () => {
   return (
@@ -20,10 +22,11 @@ const MainContent = () => {
       <div className="create-content">
         <div className="create-contents">
           <Avatars type="nodesc" label="" />
-          <input
-            className="create-input"
-            type="text"
-            placeholder="Whats come on your mind?"
+          <Input
+            placeholder={"Whats come on your mind?"}
+            forPost={true}
+            icon={false}
+            label={""}
           />
         </div>
         <div className="create-contents-button">
@@ -44,7 +47,7 @@ const MainContent = () => {
       <div className="post">
         <Avatars desc="5h ago" />
 
-        <label className="post-hastag">#Hastag #Hastag #Hastag</label>
+        <Label text="#Hastag #Hastag #Hastag" size={"sm"} />
         <p>
           Penjelasan yang sangat mantap sekali dari sini dan sangat mantap dari
           siru ayeyeyeye apapaun minumananya makanan nya tetap cap kaki badk

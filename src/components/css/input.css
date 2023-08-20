@@ -19,6 +19,21 @@
   pointer-events: none;
 }
 
+.input-post {
+  margin-left: 10px;
+  display: flex;
+  width: 400px;
+  height: 28px;
+  padding: 10px 40px;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 40px;
+  background: var(--secondary200);
+  border: 0;
+}
+
 .ifta-label {
   font-family: Plus Jakarta Sans;
   color: var(--secondary200);

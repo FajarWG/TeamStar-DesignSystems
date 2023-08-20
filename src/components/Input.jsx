@@ -12,8 +12,9 @@ export const Input = ({
   disabled,
   icon,
   onChange,
+  forPost,
 }) => (
-  <div className="input">
+  <div className={forPost === true ? "" : "input"}>
     {icon && (
       <ArrowRight3
         className="input-icon"
@@ -34,7 +35,13 @@ export const Input = ({
       type={type}
       value={value}
       name={names}
-      className={icon ? "ifta-field-icon" : "ifta-field"}
+      className={
+        forPost === true
+          ? "input-post"
+          : icon
+          ? "ifta-field-icon"
+          : "ifta-field"
+      }
       placeholder={placeholder}
       onChange={onChange}
       disabled={disabled}
@@ -53,6 +60,7 @@ Input.propTypes = {
   onChange: PropTypes.func,
   icon: PropTypes.bool,
   disabled: PropTypes.bool,
+  forPost: PropTypes.bool,
 };
 
 Input.defaultProps = {

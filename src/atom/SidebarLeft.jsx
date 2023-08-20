@@ -1,7 +1,7 @@
 import "./css/sidebar.css";
 import { Avatars } from "../components/Avatars";
-import UserIcon from "../assets/User.svg";
 import { MenuNavigation } from "../components/MenuNavigation";
+import UserIcon from "../assets/User.svg";
 import {
   ArchiveTick,
   Calendar,

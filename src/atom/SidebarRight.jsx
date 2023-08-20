@@ -1,8 +1,8 @@
 import "./css/sidebar.css";
 import { Avatars } from "../components/Avatars";
 import { Divider } from "../components/Divider";
-import { Call, Message } from "iconsax-react";
 import { Label } from "../components/Label";
+import { Call, Message } from "iconsax-react";
 import NewsSection from "./moleculs/NewsSection";
 
 const SidebarRight = () => {
